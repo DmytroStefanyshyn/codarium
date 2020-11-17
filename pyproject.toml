@@ -5,7 +5,7 @@ description = ""
 authors = ["Dmytro <hellohowareyouuuu@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.7"
 selene = {version = "^1.0.2", allow-prereleases = true}
 
 [tool.poetry.dev-dependencies]
