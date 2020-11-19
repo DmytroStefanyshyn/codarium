@@ -9,10 +9,9 @@ def setup_module():
 
 
 def test_search_and_count_links():
-    query = '[name="q"]'
-    s(query).type('yashaka selene').press_enter()
-    ss('.result-body .js-result-title').first.click()
-    ss('[href = "/yashaka/selene"]').should(have.size(3))
+    s('[name=q]').type('yashaka selene').press_enter()
+    ss('.result').first.click()
+    ss('[href ="/yashaka/selene"]').should(have.size(3))
 
 
 def teardown_module():
